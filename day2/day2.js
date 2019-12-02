@@ -3,8 +3,7 @@ const commaString = "1,0,0,3,1,1,2,3,1,3,4,3,1,5,0,3,2,1,13,19,1,10,19,23,2,9,23
 var partOne = function(noun, verb) {
     var intList = commaString.split(',').map(n => parseInt(n, 10)),
         length = intList.length,
-        done = false,
-        i = 0;
+        done = false;
     
     intList[1] = noun ? noun : 12;
     intList[2] = verb ? verb : 2;
